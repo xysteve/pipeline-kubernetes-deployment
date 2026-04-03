@@ -15,8 +15,10 @@ spec:
       labels:
         app: spring-boot-app
     spec:
+      imagePullSecrets:
+        - name: docker-secret
       containers:
       - name: spring-boot-app
-        image: xy/ultimate-cicd:19
+        image: xy/ultimate-cicd:20
         ports:
         - containerPort: 8080
