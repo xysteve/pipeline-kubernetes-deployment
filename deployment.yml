@@ -1,6 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: default  
   name: spring-boot-app
   labels:
     app: spring-boot-app
@@ -16,6 +17,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: xy/ultimate-cicd:18
+        image: xy/ultimate-cicd:19
         ports:
         - containerPort: 8080
