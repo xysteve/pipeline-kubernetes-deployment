@@ -6,7 +6,7 @@ metadata:
   labels:
     app: spring-boot-app
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: spring-boot-app
@@ -19,6 +19,6 @@ spec:
         - name: docker-secret
       containers:
       - name: spring-boot-app
-        image: xy/ultimate-cicd:20
+        image: xy/ultimate-cicd:21
         ports:
         - containerPort: 8080
