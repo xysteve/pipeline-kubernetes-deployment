@@ -19,6 +19,6 @@ spec:
         - name: docker-secret
       containers:
       - name: spring-boot-app
-        image: xy/ultimate-cicd:22
+        image: steveyang128/ultimate-cicd:23
         ports:
         - containerPort: 8080
